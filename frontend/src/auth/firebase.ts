@@ -1,12 +1,13 @@
 import { initializeApp } from "firebase/app";
 import { getAuth  } from "firebase/auth";
 
-// TODO: Add SDKs for Firebase products that you want to use
-
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 
 
+//these are not a security risk see
+//https://stackoverflow.com/questions/37482366/is-it-safe-to-expose-firebase-apikey-to-the-public
+//https://firebase.google.com/docs/projects/api-keys
+//but still could be nicer if it were not hard coded
 const firebaseConfig = {
 
   apiKey: "AIzaSyA_QwsNscEMtleCpRtKBFruxF-0lrbLE7Q",
