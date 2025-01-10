@@ -4,29 +4,9 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { getAuth, signOut } from "firebase/auth";
 
-import { Link } from "react-router";
-import { useAuthState } from "./auth/useAuthState";
-
 function App() {
   const [count, setCount] = useState(0);
   const auth = getAuth();
-  const [user, loading, error] = useAuthState(auth, {});
-
-  console.log("userinfo", user);
-  console.log("loading", loading);
-
-  if (loading) {
-    return <div>Authentication is loading...</div>;
-  }
-
-  if (!user) {
-    return (
-      <div>
-        You are not authenticated
-        <Link to={"/signup"}>Signup</Link>
-      </div>
-    );
-  }
 
   return (
     <>
