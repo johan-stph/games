@@ -48,3 +48,15 @@ export default tseslint.config({
   },
 })
 ```
+
+# Dev Server
+```npm run dev````
+
+# Build Server 
+```npm run build````
+```npm run preview``` for testing
+
+```docker build -t name_of_tag .```
+```docker start -p 8080:8080 name_of_tag````
+
+
