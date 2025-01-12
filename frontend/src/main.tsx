@@ -22,7 +22,7 @@ createRoot(document.getElementById("root")!).render(
                 <Route path="/signup" element={<SignUp/>}/>
                 <Route path="/user" element={
                     <RequireAuthLayout>
-                        <UserPage/>
+                        <UserPage user={undefined}/>
                     </RequireAuthLayout>
                 }/>
             </Routes>

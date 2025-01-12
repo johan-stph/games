@@ -1,5 +1,7 @@
 import {useEffect, useState} from "react";
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 export function UserPage({user}) {
     const [isLoading, setLoading] = useState<boolean>(true);
     const [email, setEmail] = useState<string | null>(null);
