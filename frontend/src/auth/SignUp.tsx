@@ -4,6 +4,8 @@ import { useAuthState } from "./useAuthState";
 import { Link } from "react-router";
 
 const provider = new GoogleAuthProvider();
+//provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+//https://developers.google.com/identity/protocols/oauth2/scopes?hl=de
 
 export default function SignUp() {
   const [user, loading, _] = useAuthState(auth, {});

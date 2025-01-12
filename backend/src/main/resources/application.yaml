@@ -7,4 +7,4 @@ spring:
       resourceserver:
         jwt:
           jwk-set-uri: https://www.googleapis.com/service_accounts/v1/jwk/securetoken%40system.gserviceaccount.com
-          issuer-uri: https://securetoken.google.com/kit-recipe-app
+          issuer-uri: https://securetoken.google.com/games-icyderdritte
