@@ -75,6 +75,7 @@
                     <user>backend</user>
                     <password>4paTGZ2YbmMQUX1</password>
                     <schemas>
+                        <schema>wizard</schema>
                         <schema>user_related</schema>
                     </schemas>
                     <defaultSchema>user_related</defaultSchema>
