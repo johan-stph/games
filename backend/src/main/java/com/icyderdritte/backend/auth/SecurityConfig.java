@@ -21,7 +21,7 @@ public class SecurityConfig {
         http.authorizeHttpRequests(
                         auth -> {
                             auth.requestMatchers("/health").permitAll();
-                            auth.requestMatchers("/**").permitAll();
+                            auth.requestMatchers("/**").authenticated();
                         }
                 )
                 .cors(cors -> cors.configurationSource(request -> {
