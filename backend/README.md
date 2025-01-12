@@ -15,10 +15,10 @@ thank me later
 CREATE DATABASE name;
 CREATE USER backend WITH PASSWORD '...';
 GRANT CONNECT ON DATABASE name TO backend;
+GRANT CREATE ON DATABASE name TO backend; // for flayway to create schemas on db
 \c games;
 CREATE SCHEMA user_related;
 GRANT USAGE ON SCHEMA user_related TO backend; //could also be more granular but i dont have the will
 
-GRANT CREATE ON DATABASE db TO user; // for flayway to create schemas on db
 
 ```
